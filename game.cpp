@@ -12,3 +12,6 @@ int main() {
     std::cout << "Guess a number between 1 and 100." << std::endl;
 
     while (guess != secret) {
+        std::cout << "Enter your guess: ";
+        std::cin >> guess;
+        attempts++;
