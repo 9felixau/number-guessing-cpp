@@ -15,3 +15,9 @@ int main() {
         std::cout << "Enter your guess: ";
         std::cin >> guess;
         attempts++;
+
+        if (guess > secret) {
+            std::cout << "Too high! Try again." << std::endl;
+        } else if (guess < secret) {
+            std::cout << "Too low! Try again." << std::endl;
+        } else {
